@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Alex Doe - Portfolio</title>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#137fec",
+                        "background-light": "#f6f7f8",
+                        "background-dark": "#101922",
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "sans-serif"]
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-[#0d141b] font-display antialiased">
+<!-- Sticky Navigation -->
+<div class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-[#e7edf3] dark:bg-background-dark/90 dark:border-gray-800">
+<div class="max-w-[1280px] mx-auto px-4 sm:px-10 py-3 flex items-center justify-between whitespace-nowrap">
+<div class="flex items-center gap-3">
+<div class="size-8 flex items-center justify-center bg-primary/10 rounded-lg text-primary">
+<span class="material-symbols-outlined">person</span>
+</div>
+<h2 class="text-lg font-bold leading-tight tracking-[-0.015em] dark:text-white">Alex Doe</h2>
+</div>
+<div class="hidden md:flex flex-1 justify-end gap-8 items-center">
+<nav class="flex items-center gap-8">
+<a class="text-sm font-medium hover:text-primary transition-colors dark:text-gray-300" href="#home">Home</a>
+<a class="text-sm font-medium hover:text-primary transition-colors dark:text-gray-300" href="#news">News</a>
+<a class="text-sm font-medium hover:text-primary transition-colors dark:text-gray-300" href="#about">About</a>
+<a class="text-sm font-medium hover:text-primary transition-colors dark:text-gray-300" href="#services">Services</a>
+</nav>
+<a class="flex min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-6 bg-primary text-white text-sm font-bold shadow-sm hover:bg-blue-600 transition-colors" href="#contact">
+<span class="truncate">Contact Me</span>
+</a>
+</div>
+<!-- Mobile Menu Icon -->
+<button class="md:hidden p-2 text-gray-600 dark:text-gray-300">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</div>
+<main class="flex flex-col w-full">
+<!-- Hero Section -->
+<section class="w-full flex justify-center py-12 md:py-20 px-4 md:px-10" id="home">
+<div class="max-w-[1024px] w-full">
+<div class="@container">
+<div class="flex flex-col-reverse md:flex-row items-center gap-10 md:gap-16">
+<div class="flex flex-col gap-6 flex-1 text-center md:text-left items-center md:items-start">
+<div class="flex flex-col gap-4">
+<span class="inline-block px-3 py-1 bg-primary/10 text-primary text-xs font-bold uppercase tracking-wider rounded-full w-fit">Product Designer</span>
+<h1 class="text-4xl md:text-6xl font-black leading-tight tracking-[-0.033em] dark:text-white">
+                                    Crafting digital experiences that matter.
+                                </h1>
+<p class="text-base md:text-lg text-gray-600 dark:text-gray-400 font-normal leading-relaxed max-w-[500px]">
+                                    I help startups and established brands build intuitive, user-centric interfaces. Based in San Francisco, working globally.
+                                </p>
+</div>
+<div class="flex gap-4 mt-2">
+<button class="h-12 px-8 rounded-lg bg-primary text-white text-base font-bold shadow-md hover:bg-blue-600 hover:-translate-y-0.5 transition-all">
+                                    Hire Me
+                                </button>
+<button class="h-12 px-8 rounded-lg bg-white border border-[#e7edf3] text-[#0d141b] text-base font-bold shadow-sm hover:bg-gray-50 transition-all dark:bg-gray-800 dark:border-gray-700 dark:text-white dark:hover:bg-gray-700">
+                                    Download CV
+                                </button>
+</div>
+</div>
+<div class="w-full max-w-[400px] md:max-w-[480px] aspect-[4/5] md:aspect-square relative rounded-2xl overflow-hidden shadow-2xl flex-1">
+<div class="absolute inset-0 bg-gradient-to-tr from-primary/20 to-transparent z-10"></div>
+<div class="w-full h-full bg-center bg-no-repeat bg-cover" data-alt="Professional portrait of a designer in a modern studio setting" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAvTgrhdmKEXOFpQ8ftigV4krcebtiv71_5jQ1Es-fURAYcGyPG8eRgFY6x3qQrn4daDcpU9OjusA3VM7vFh5q_Zkl2HmZw0b50ewyxfO1A57YokFRqo29e8Q5--SYF-Dy2kzgza7PXyfV0-BMl72Hyfyzf5ZD_joj6jD92SJ6uAr9hQbWrIYSAlMOKYur6VzW-jo8mv9b9Y9D-5x5U7WxM1Iw8xdB5d4EVtZUBp85Z6OBguRlZy3vHxUa78fE8Q6dwk8o0jVGeEVEh");'>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- News / Carousel Section -->
+<section class="w-full bg-white dark:bg-gray-900 py-16 px-4 md:px-10 border-y border-[#e7edf3] dark:border-gray-800" id="news">
+<div class="max-w-[1024px] mx-auto flex flex-col gap-8">
+<div class="flex justify-between items-end px-2">
+<div>
+<h2 class="text-2xl md:text-3xl font-bold leading-tight tracking-tight dark:text-white mb-2">Latest Updates</h2>
+<p class="text-gray-500 dark:text-gray-400">Thoughts, events, and recent activities.</p>
+</div>
+<div class="hidden sm:flex gap-2">
+<button class="p-2 rounded-full border border-gray-200 hover:bg-gray-50 dark:border-gray-700 dark:hover:bg-gray-800 dark:text-white transition-colors">
+<span class="material-symbols-outlined text-sm">arrow_back</span>
+</button>
+<button class="p-2 rounded-full border border-gray-200 hover:bg-gray-50 dark:border-gray-700 dark:hover:bg-gray-800 dark:text-white transition-colors">
+<span class="material-symbols-outlined text-sm">arrow_forward</span>
+</button>
+</div>
+</div>
+<div class="flex overflow-x-auto gap-6 pb-6 snap-x snap-mandatory [-ms-scrollbar-style:none] [scrollbar-width:none] [&amp;::-webkit-scrollbar]:hidden">
+<!-- Card 1 -->
+<div class="min-w-[280px] md:min-w-[320px] snap-center flex flex-col gap-4 group cursor-pointer">
+<div class="w-full aspect-video rounded-xl overflow-hidden relative">
+<div class="w-full h-full bg-center bg-cover transition-transform duration-500 group-hover:scale-105" data-alt="Crowd at a design conference watching a presentation" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCnX_utiV8nYhohz-AQbqOn_wNzY9DHnw7U-MzHUVdH6bKIgCEzfkHDgUaOuLa3-Z6BI0Rv3mkAJqyICQQ5wS9sTt7TNwaGQUYhVHMSyQ4gxizZaG1g8rymVMNwVz-PX_PA69eaFpb1QqUeoDPZhvznudcfc0eA7JG8B_boIWw1K8czQoP5AiK3xPIiK2Jx6bq1AyIloRbq0ZJCSXYqkBY_xPHSSo7awGvcnvq-XrQrWYPR104LlrVLlw163abnA0nzylbvM8G6KyoI");'></div>
+</div>
+<div>
+<div class="flex items-center gap-2 mb-2 text-xs font-semibold uppercase tracking-wider text-primary">
+<span class="material-symbols-outlined text-base">mic</span>
+<span>Speaking</span>
+</div>
+<h3 class="text-lg font-bold text-[#0d141b] dark:text-white group-hover:text-primary transition-colors">Keynote at DesignConf 2023</h3>
+<p class="text-gray-500 text-sm mt-1">Exploring the future of AI in creative workflows.</p>
+<p class="text-gray-400 text-xs mt-3 font-medium">Oct 12, 2023</p>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="min-w-[280px] md:min-w-[320px] snap-center flex flex-col gap-4 group cursor-pointer">
+<div class="w-full aspect-video rounded-xl overflow-hidden relative">
+<div class="w-full h-full bg-center bg-cover transition-transform duration-500 group-hover:scale-105" data-alt="People collaborating around a laptop with sticky notes on wall" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuC5Z8WJWVRlClHvkKYV_9VfCGdMEXV68rcF8MXkRTbfZKygD_zC2OrumO5_FDjjOGN027OnbAIl41VSg348jR9vbpGAmLjIOhuwLjAK3NCkSNYCUKhGzUn1BZVvfliEyB2Kq8uLQhIRANCm47OeI2cjdxDXoMUfOv2cXzR1EqgRINw6tE2dv3wngNFXEz6uaGXfE0b9jcEq7adr2uaCAzp7SJDwaPYmaJ5LQq-ZKbMf8srhCI-h1_g4qma2e2cAHFqfev7ocaxx-3gH");'></div>
+</div>
+<div>
+<div class="flex items-center gap-2 mb-2 text-xs font-semibold uppercase tracking-wider text-primary">
+<span class="material-symbols-outlined text-base">school</span>
+<span>Workshop</span>
+</div>
+<h3 class="text-lg font-bold text-[#0d141b] dark:text-white group-hover:text-primary transition-colors">UX Workshop for Startups</h3>
+<p class="text-gray-500 text-sm mt-1">Practical strategies for early-stage product validation.</p>
+<p class="text-gray-400 text-xs mt-3 font-medium">Nov 05, 2023</p>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="min-w-[280px] md:min-w-[320px] snap-center flex flex-col gap-4 group cursor-pointer">
+<div class="w-full aspect-video rounded-xl overflow-hidden relative">
+<div class="w-full h-full bg-center bg-cover transition-transform duration-500 group-hover:scale-105" data-alt="Golden trophy on a minimal desk setting" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuANiMrdkVp3pvZGTltvEtcwFpTCXb5IC_GoqRE2KoC49qnqZKLLxvFvwBr_vyIkFgtT_mdknSV4cLLpavhJPtSoR9UH5EJH5Uj3nGpJnVBL4cJH_-Qub4LrH9iUCrv36g67btwiFkKt2xihD6H7Yzw6v89i2seJ6gLd4TNrz4xCUA7alAxXs0fn9NAbi1H8yRwI8wECQ5-gHMMkdaLKEc_ZijXQkX8GpZj6G0NFZj81f69LB3J0OdHfWmhhnEFRL_Dh-Ha1zOjV2B2Z");'></div>
+</div>
+<div>
+<div class="flex items-center gap-2 mb-2 text-xs font-semibold uppercase tracking-wider text-primary">
+<span class="material-symbols-outlined text-base">emoji_events</span>
+<span>Achievement</span>
+</div>
+<h3 class="text-lg font-bold text-[#0d141b] dark:text-white group-hover:text-primary transition-colors">Best UI Design Award</h3>
+<p class="text-gray-500 text-sm mt-1">Recognized for excellence in mobile application design.</p>
+<p class="text-gray-400 text-xs mt-3 font-medium">Dec 10, 2023</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- About Section -->
+<section class="w-full py-16 px-4 md:px-10" id="about">
+<div class="max-w-[1024px] mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-20">
+<div class="flex flex-col gap-6">
+<div>
+<h2 class="text-2xl md:text-3xl font-bold leading-tight tracking-tight dark:text-white mb-4">About Me</h2>
+<div class="h-1 w-20 bg-primary rounded-full"></div>
+</div>
+<p class="text-gray-600 dark:text-gray-300 leading-relaxed">
+                            I am a passionate Product Designer with over 8 years of experience in building digital products. My journey started as a graphic designer, but I quickly fell in love with the logic and empathy required for UX/UI design.
+                        </p>
+<p class="text-gray-600 dark:text-gray-300 leading-relaxed">
+                            I believe in design that is not just beautiful, but functional and accessible. When I'm not designing, I'm likely hiking, reading sci-fi novels, or experimenting with new cooking recipes.
+                        </p>
+<div class="grid grid-cols-2 gap-6 mt-4">
+<div>
+<h4 class="text-3xl font-black text-primary">8+</h4>
+<p class="text-sm font-medium text-gray-500">Years Experience</p>
+</div>
+<div>
+<h4 class="text-3xl font-black text-primary">50+</h4>
+<p class="text-sm font-medium text-gray-500">Projects Completed</p>
+</div>
+<div>
+<h4 class="text-3xl font-black text-primary">12</h4>
+<p class="text-sm font-medium text-gray-500">Design Awards</p>
+</div>
+<div>
+<h4 class="text-3xl font-black text-primary">100%</h4>
+<p class="text-sm font-medium text-gray-500">Client Satisfaction</p>
+</div>
+</div>
+</div>
+<div class="flex flex-col justify-center gap-8 bg-white dark:bg-gray-800 p-8 rounded-2xl shadow-sm border border-[#e7edf3] dark:border-gray-700">
+<h3 class="text-xl font-bold dark:text-white">Skills &amp; Expertise</h3>
+<!-- Skill 1 -->
+<div class="flex flex-col gap-2">
+<div class="flex justify-between text-sm font-medium">
+<span class="dark:text-gray-200">UI/UX Design</span>
+<span class="text-primary">95%</span>
+</div>
+<div class="w-full bg-gray-100 dark:bg-gray-700 rounded-full h-2.5">
+<div class="bg-primary h-2.5 rounded-full" style="width: 95%"></div>
+</div>
+</div>
+<!-- Skill 2 -->
+<div class="flex flex-col gap-2">
+<div class="flex justify-between text-sm font-medium">
+<span class="dark:text-gray-200">Product Strategy</span>
+<span class="text-primary">85%</span>
+</div>
+<div class="w-full bg-gray-100 dark:bg-gray-700 rounded-full h-2.5">
+<div class="bg-primary h-2.5 rounded-full" style="width: 85%"></div>
+</div>
+</div>
+<!-- Skill 3 -->
+<div class="flex flex-col gap-2">
+<div class="flex justify-between text-sm font-medium">
+<span class="dark:text-gray-200">Frontend Dev (HTML/CSS)</span>
+<span class="text-primary">70%</span>
+</div>
+<div class="w-full bg-gray-100 dark:bg-gray-700 rounded-full h-2.5">
+<div class="bg-primary h-2.5 rounded-full" style="width: 70%"></div>
+</div>
+</div>
+<div class="flex flex-wrap gap-2 mt-2">
+<span class="px-3 py-1 bg-gray-100 dark:bg-gray-700 dark:text-gray-300 text-gray-600 rounded-md text-xs font-semibold">Figma</span>
+<span class="px-3 py-1 bg-gray-100 dark:bg-gray-700 dark:text-gray-300 text-gray-600 rounded-md text-xs font-semibold">Adobe XD</span>
+<span class="px-3 py-1 bg-gray-100 dark:bg-gray-700 dark:text-gray-300 text-gray-600 rounded-md text-xs font-semibold">Webflow</span>
+<span class="px-3 py-1 bg-gray-100 dark:bg-gray-700 dark:text-gray-300 text-gray-600 rounded-md text-xs font-semibold">Tailwind CSS</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Services / Prices Section -->
+<section class="w-full bg-background-light dark:bg-background-dark py-16 px-4 md:px-10" id="services">
+<div class="max-w-[1024px] mx-auto">
+<div class="text-center mb-12">
+<h2 class="text-2xl md:text-3xl font-bold leading-tight tracking-tight dark:text-white">Services &amp; Pricing</h2>
+<p class="text-gray-500 mt-2 max-w-[600px] mx-auto">Flexible options for projects of any size. Whether you need a quick consultation or a full product overhaul.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6 items-start">
+<!-- Basic Plan -->
+<div class="bg-white dark:bg-gray-800 p-8 rounded-xl border border-gray-100 dark:border-gray-700 shadow-sm flex flex-col gap-6 hover:shadow-md transition-shadow">
+<div>
+<h3 class="text-lg font-bold text-gray-900 dark:text-white">Consultation</h3>
+<p class="text-sm text-gray-500 mt-1">For quick advice &amp; audits.</p>
+</div>
+<div class="text-3xl font-bold text-primary">$150<span class="text-sm font-normal text-gray-500 ml-1">/ hour</span></div>
+<ul class="flex flex-col gap-3">
+<li class="flex items-center gap-3 text-sm text-gray-600 dark:text-gray-300">
+<span class="material-symbols-outlined text-green-500 text-lg">check</span> UI/UX Audit
+                            </li>
+<li class="flex items-center gap-3 text-sm text-gray-600 dark:text-gray-300">
+<span class="material-symbols-outlined text-green-500 text-lg">check</span> Career Mentoring
+                            </li>
+<li class="flex items-center gap-3 text-sm text-gray-600 dark:text-gray-300">
+<span class="material-symbols-outlined text-green-500 text-lg">check</span> Portfolio Review
+                            </li>
+</ul>
+<button class="w-full py-2.5 rounded-lg border border-primary text-primary font-bold text-sm hover:bg-primary/5 transition-colors">Get Started</button>
+</div>
+<!-- Standard Plan (Featured) -->
+<div class="bg-white dark:bg-gray-800 p-8 rounded-xl border-2 border-primary shadow-lg flex flex-col gap-6 relative md:-mt-4 md:mb-4">
+<div class="absolute top-0 right-0 bg-primary text-white text-[10px] font-bold px-3 py-1 rounded-bl-lg rounded-tr-lg uppercase tracking-wide">Most Popular</div>
+<div>
+<h3 class="text-lg font-bold text-gray-900 dark:text-white">Project Based</h3>
+<p class="text-sm text-gray-500 mt-1">End-to-end design delivery.</p>
+</div>
+<div class="text-3xl font-bold text-primary">$2,500<span class="text-sm font-normal text-gray-500 ml-1">/ start</span></div>
+<ul class="flex flex-col gap-3">
+<li class="flex items-center gap-3 text-sm text-gray-600 dark:text-gray-300">
+<span class="material-symbols-outlined text-green-500 text-lg">check</span> Full UI Design System
+                            </li>
+<li class="flex items-center gap-3 text-sm text-gray-600 dark:text-gray-300">
+<span class="material-symbols-outlined text-green-500 text-lg">check</span> Interactive Prototypes
+                            </li>
+<li class="flex items-center gap-3 text-sm text-gray-600 dark:text-gray-300">
+<span class="material-symbols-outlined text-green-500 text-lg">check</span> Developer Handoff
+                            </li>
+<li class="flex items-center gap-3 text-sm text-gray-600 dark:text-gray-300">
+<span class="material-symbols-outlined text-green-500 text-lg">check</span> 2 Rounds of Revision
+                            </li>
+</ul>
+<button class="w-full py-3 rounded-lg bg-primary text-white font-bold text-sm hover:bg-blue-600 transition-colors shadow-md">Get Started</button>
+</div>
+<!-- Premium Plan -->
+<div class="bg-white dark:bg-gray-800 p-8 rounded-xl border border-gray-100 dark:border-gray-700 shadow-sm flex flex-col gap-6 hover:shadow-md transition-shadow">
+<div>
+<h3 class="text-lg font-bold text-gray-900 dark:text-white">Retainer</h3>
+<p class="text-sm text-gray-500 mt-1">Ongoing dedicated support.</p>
+</div>
+<div class="text-3xl font-bold text-primary">$4,000<span class="text-sm font-normal text-gray-500 ml-1">/ month</span></div>
+<ul class="flex flex-col gap-3">
+<li class="flex items-center gap-3 text-sm text-gray-600 dark:text-gray-300">
+<span class="material-symbols-outlined text-green-500 text-lg">check</span> Dedicated Designer
+                            </li>
+<li class="flex items-center gap-3 text-sm text-gray-600 dark:text-gray-300">
+<span class="material-symbols-outlined text-green-500 text-lg">check</span> Unlimited Requests
+                            </li>
+<li class="flex items-center gap-3 text-sm text-gray-600 dark:text-gray-300">
+<span class="material-symbols-outlined text-green-500 text-lg">check</span> Priority Support
+                            </li>
+</ul>
+<button class="w-full py-2.5 rounded-lg border border-primary text-primary font-bold text-sm hover:bg-primary/5 transition-colors">Contact Sales</button>
+</div>
+</div>
+</div>
+</section>
+<!-- Contact Section -->
+<section class="w-full bg-white dark:bg-gray-900 pt-16 pb-8 px-4 md:px-10 border-t border-[#e7edf3] dark:border-gray-800" id="contact">
+<div class="max-w-[1024px] mx-auto">
+<div class="flex flex-col md:flex-row gap-12">
+<!-- Contact Form -->
+<div class="flex-1">
+<h2 class="text-2xl font-bold text-gray-900 dark:text-white mb-6">Get In Touch</h2>
+<form class="flex flex-col gap-4">
+<div class="grid grid-cols-2 gap-4">
+<div class="flex flex-col gap-1">
+<label class="text-xs font-semibold text-gray-500 uppercase">Name</label>
+<input class="w-full h-12 rounded-lg border border-gray-200 bg-gray-50 px-4 text-sm outline-none focus:border-primary focus:ring-1 focus:ring-primary dark:bg-gray-800 dark:border-gray-700 dark:text-white" placeholder="John Doe" type="text"/>
+</div>
+<div class="flex flex-col gap-1">
+<label class="text-xs font-semibold text-gray-500 uppercase">Email</label>
+<input class="w-full h-12 rounded-lg border border-gray-200 bg-gray-50 px-4 text-sm outline-none focus:border-primary focus:ring-1 focus:ring-primary dark:bg-gray-800 dark:border-gray-700 dark:text-white" placeholder="john@example.com" type="email"/>
+</div>
+</div>
+<div class="flex flex-col gap-1">
+<label class="text-xs font-semibold text-gray-500 uppercase">Subject</label>
+<input class="w-full h-12 rounded-lg border border-gray-200 bg-gray-50 px-4 text-sm outline-none focus:border-primary focus:ring-1 focus:ring-primary dark:bg-gray-800 dark:border-gray-700 dark:text-white" placeholder="Project Inquiry" type="text"/>
+</div>
+<div class="flex flex-col gap-1">
+<label class="text-xs font-semibold text-gray-500 uppercase">Message</label>
+<textarea class="w-full h-32 rounded-lg border border-gray-200 bg-gray-50 p-4 text-sm outline-none focus:border-primary focus:ring-1 focus:ring-primary dark:bg-gray-800 dark:border-gray-700 dark:text-white resize-none" placeholder="Tell me about your project..."></textarea>
+</div>
+<button class="h-12 w-full md:w-auto md:px-8 mt-2 rounded-lg bg-primary text-white font-bold text-sm shadow-md hover:bg-blue-600 transition-colors">Send Message</button>
+</form>
+</div>
+<!-- Contact Info -->
+<div class="flex-1 md:max-w-sm flex flex-col gap-8">
+<div>
+<h2 class="text-2xl font-bold text-gray-900 dark:text-white mb-6">Contact Info</h2>
+<p class="text-gray-600 dark:text-gray-400 mb-6">
+                                Feel free to reach out for collaborations, speaking engagements, or just a friendly hello.
+                            </p>
+<div class="flex flex-col gap-4">
+<div class="flex items-center gap-4">
+<div class="size-10 rounded-full bg-primary/10 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined">mail</span>
+</div>
+<div>
+<p class="text-xs text-gray-500 font-medium">Email Me</p>
+<a class="text-sm font-bold text-[#0d141b] dark:text-white hover:text-primary transition-colors" href="mailto:alex@example.com">alex@example.com</a>
+</div>
+</div>
+<div class="flex items-center gap-4">
+<div class="size-10 rounded-full bg-primary/10 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined">call</span>
+</div>
+<div>
+<p class="text-xs text-gray-500 font-medium">Call Me</p>
+<a class="text-sm font-bold text-[#0d141b] dark:text-white hover:text-primary transition-colors" href="tel:+15550001234">+1 (555) 000-1234</a>
+</div>
+</div>
+<div class="flex items-center gap-4">
+<div class="size-10 rounded-full bg-primary/10 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined">location_on</span>
+</div>
+<div>
+<p class="text-xs text-gray-500 font-medium">Location</p>
+<p class="text-sm font-bold text-[#0d141b] dark:text-white">San Francisco, CA</p>
+</div>
+</div>
+</div>
+</div>
+<div>
+<h3 class="text-sm font-bold text-gray-900 dark:text-white mb-3">Follow Me</h3>
+<div class="flex gap-3">
+<a class="size-10 rounded-full bg-gray-100 dark:bg-gray-800 flex items-center justify-center text-gray-600 dark:text-gray-300 hover:bg-primary hover:text-white transition-all" href="#">
+<svg aria-hidden="true" class="w-5 h-5 fill-current" viewbox="0 0 24 24"><path d="M22 5.8a8.49 8.49 0 0 1-2.36.64 4.13 4.13 0 0 0 1.81-2.27 8.21 8.21 0 0 1-2.61 1 4.1 4.1 0 0 0-7 3.74 11.64 11.64 0 0 1-8.45-4.29 4.16 4.16 0 0 0 1.27 5.49A4.09 4.09 0 0 1 1.7 9.4v.05a4.1 4.1 0 0 0 3.3 4 4.09 4.09 0 0 1-1.85.07 4.1 4.1 0 0 0 3.83 2.85A8.23 8.23 0 0 1 2 18.4a11.58 11.58 0 0 0 6.29 1.85A11.59 11.59 0 0 0 20 8.45v-.53a8.43 8.43 0 0 0 2.08-2.12Z"></path></svg>
+</a>
+<a class="size-10 rounded-full bg-gray-100 dark:bg-gray-800 flex items-center justify-center text-gray-600 dark:text-gray-300 hover:bg-primary hover:text-white transition-all" href="#">
+<svg aria-hidden="true" class="w-5 h-5 fill-current" viewbox="0 0 24 24"><path clip-rule="evenodd" d="M12 2C6.48 2 2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15h-2.4v-3H10V9.64c0-2.45 1.46-3.8 3.7-3.8 1.07 0 2.2.19 2.2.19v2.42h-1.24c-1.18 0-1.54.73-1.54 1.48V12h2.7l-.43 3h-2.27v6.79c4.56-.93 8-4.96 8-9.79C22 6.48 17.52 2 12 2Z" fill-rule="evenodd"></path></svg>
+</a>
+<a class="size-10 rounded-full bg-gray-100 dark:bg-gray-800 flex items-center justify-center text-gray-600 dark:text-gray-300 hover:bg-primary hover:text-white transition-all" href="#">
+<svg aria-hidden="true" class="w-5 h-5 fill-current" viewbox="0 0 24 24"><path clip-rule="evenodd" d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 0 1 1.772 1.153 4.902 4.902 0 0 1 1.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 0 1-1.153 1.772 4.902 4.902 0 0 1-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 0 1-1.772-1.153 4.902 4.902 0 0 1-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 0 1 1.153-1.772A4.902 4.902 0 0 1 5.451 4.635c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 0 0-.748-1.15 3.098 3.098 0 0 0-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 1 1 0 10.27 5.135 5.135 0 0 1 0-10.27zm0 1.802a3.333 3.333 0 1 0 0 6.666 3.333 3.333 0 0 0 0-6.666zm5.338-3.205a1.2 1.2 0 1 1 0 2.4 1.2 1.2 0 0 1 0-2.4z" fill-rule="evenodd"></path></svg>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="w-full bg-background-light dark:bg-background-dark py-8 text-center text-sm text-gray-500 border-t border-[#e7edf3] dark:border-gray-800">
+<p>© 2024 Alex Doe. All rights reserved.</p>
+</footer>
+</main>
+</body></html>
