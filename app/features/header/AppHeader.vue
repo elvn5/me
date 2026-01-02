@@ -7,6 +7,13 @@ const navLinks = [
   { href: "#about", label: "Обо мне" },
   { href: "#services", label: "Услуги" },
 ];
+
+const scrollToTop = () => {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth",
+  });
+};
 </script>
 
 <template>
@@ -22,7 +29,10 @@ const navLinks = [
         >
           <UIcon name="i-heroicons-user" class="size-5" />
         </div>
-        <h2 class="text-lg font-bold leading-tight tracking-tight">
+        <h2
+          class="cursor-pointer text-lg font-bold leading-tight tracking-tight"
+          @click="scrollToTop"
+        >
           Черикчиев Эрмек
         </h2>
       </div>

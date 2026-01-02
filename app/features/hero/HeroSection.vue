@@ -1,3 +1,36 @@
+<script setup lang="ts">
+const titleText = "Создаю цифровой опыт, улучшающий жизнь людей.";
+const subtitleText = ref("");
+
+const typeText = async (
+  text: string,
+  onUpdate: (val: string) => void,
+  speed = 50
+) => {
+  for (let i = 0; i <= text.length; i++) {
+    onUpdate(text.substring(0, i));
+    await new Promise((resolve) => setTimeout(resolve, speed));
+  }
+};
+
+onMounted(async () => {
+  // Start subtitle sequence
+  const initialSubtitle = "Кекс инструктор";
+  const finalSubtitle = "Разработчик мобильных приложений и веб-сайтов";
+
+  await typeText(initialSubtitle, (val) => (subtitleText.value = val));
+  await new Promise((resolve) => setTimeout(resolve, 1000));
+
+  // Delete loop
+  for (let i = initialSubtitle.length; i >= 0; i--) {
+    subtitleText.value = initialSubtitle.substring(0, i);
+    await new Promise((resolve) => setTimeout(resolve, 30));
+  }
+
+  await typeText(finalSubtitle, (val) => (subtitleText.value = val));
+});
+</script>
+
 <template>
   <section
     id="home"
@@ -12,14 +45,14 @@
         >
           <div class="flex flex-col gap-4">
             <span
-              class="inline-block px-3 py-1 bg-[var(--color-primary)]/10 text-[var(--color-primary)] text-xs font-bold uppercase tracking-wider rounded-full w-fit"
+              class="inline-block px-3 py-1 bg-[var(--color-primary)]/10 text-[var(--color-primary)] text-xs font-bold uppercase tracking-wider rounded-full w-fit min-h-[24px]"
             >
-              Разработчик мобильных приложений и веб-сайтов
+              {{ subtitleText }}
             </span>
             <h1
-              class="text-4xl md:text-6xl font-black leading-tight tracking-tight"
+              class="text-4xl md:text-6xl font-black leading-tight tracking-tight min-h-[4em] md:min-h-[2.5em]"
             >
-              Создаю цифровой опыт, улучшающий жизнь людей.
+              {{ titleText }}
             </h1>
             <p
               class="text-base md:text-lg text-gray-600 dark:text-gray-400 font-normal leading-relaxed max-w-[500px]"
