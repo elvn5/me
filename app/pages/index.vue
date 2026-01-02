@@ -7,28 +7,7 @@ import ContactSection from "~/features/contact/ContactSection.vue";
 import AppFooter from "~/features/footer/AppFooter.vue";
 import ThemeToggleFab from "~/features/theme/ThemeToggleFab.vue";
 
-import { doc, getDoc } from "firebase/firestore";
-
-const { $db } = useNuxtApp();
 const instagramPostUrl = ref("https://www.instagram.com/p/DOgPOFujOHO/");
-
-onMounted(async () => {
-  try {
-    // @ts-ignore - db is provided by plugin
-    const docRef = doc($db, "settings", "social_media");
-    const docSnap = await getDoc(docRef);
-    console.log(docSnap);
-
-    if (docSnap.exists()) {
-      const data = docSnap.data();
-      if (data.instagram_post_url) {
-        instagramPostUrl.value = data.instagram_post_url;
-      }
-    }
-  } catch (error) {
-    console.error("Error fetching Instagram post URL:", error);
-  }
-});
 
 const skills = [
   { name: "Разработка приложений", percentage: 90 },
@@ -36,7 +15,7 @@ const skills = [
   { name: "Разработка бэкенда", percentage: 70 },
 ];
 
-const skillTags = ["AWS", "Flutter", "Firebase", "Supabase", "Vue3", "Nuxt3"];
+const skillTags = ["AWS", "Flutter", "Supabase", "Vue3", "Nuxt3"];
 
 const stats = [
   { value: "5+", label: "Лет опыта" },

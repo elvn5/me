@@ -43,8 +43,9 @@ defineProps<{
         <div
           class="w-full max-w-[400px] md:max-w-[480px] md:aspect-square mx-auto relative overflow-hidden bg-white dark:bg-gray-800 rounded-2xl shadow-sm border border-gray-200 dark:border-gray-700"
         >
-          <NuxtImg
-            src="/about.jpg"
+          <img
+            loading="lazy"
+            src="/about.webp"
             alt="about"
             class="w-full h-full object-cover"
           />

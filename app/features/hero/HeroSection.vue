@@ -45,8 +45,9 @@
           <div
             class="absolute inset-0 bg-gradient-to-tr from-[var(--color-primary)]/20 to-transparent z-10"
           />
-          <NuxtImg
-            src="/ava.jpg"
+          <img
+            loading="eager"
+            src="/ava.webp"
             alt="Эрмек"
             class="w-full h-full object-cover"
           />

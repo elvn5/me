@@ -7,7 +7,11 @@
       <div class="flex flex-col md:flex-row gap-12">
         <!-- Contact Form -->
         <div class="flex-1">
-          <NuxtImg src="/contact.jpg" class="w-full h-full object-cover" />
+          <img
+            loading="lazy"
+            src="/contact.webp"
+            class="w-full h-full object-cover"
+          />
         </div>
 
         <!-- Contact Info -->

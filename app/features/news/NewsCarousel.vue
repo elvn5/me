@@ -68,7 +68,8 @@ function scrollCarousel(direction: "prev" | "next") {
           class="min-w-[280px] md:min-w-[320px] snap-center flex flex-col gap-4 group cursor-pointer"
         >
           <div class="w-full aspect-video rounded-xl overflow-hidden relative">
-            <NuxtImg
+            <img
+              loading="lazy"
               :src="item.image"
               :alt="item.title"
               class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
