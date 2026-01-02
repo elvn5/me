@@ -17,6 +17,7 @@ onMounted(async () => {
     // @ts-ignore - db is provided by plugin
     const docRef = doc($db, "settings", "social_media");
     const docSnap = await getDoc(docRef);
+    console.log(docSnap);
 
     if (docSnap.exists()) {
       const data = docSnap.data();
@@ -51,7 +52,7 @@ const pricingPlans = [
     price: "1000 сом",
     period: "/ час",
     features: ["Пути решения задачи", "Варианты решений", "Рекомендации"],
-    buttonText: "Начать",
+    buttonText: "Мега старт",
     featured: false,
   },
   {
@@ -66,7 +67,7 @@ const pricingPlans = [
       "Передача разработчикам",
       "2 раунда правок",
     ],
-    buttonText: "Начать",
+    buttonText: "Гига старт",
     featured: true,
   },
   {
@@ -79,7 +80,7 @@ const pricingPlans = [
       "Безлимитные запросы",
       "Приоритетная поддержка",
     ],
-    buttonText: "Связаться с продажами",
+    buttonText: "Терра старт",
     featured: false,
   },
 ];

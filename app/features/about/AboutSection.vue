@@ -41,38 +41,13 @@ defineProps<{
         </div>
 
         <div
-          class="flex flex-col justify-center gap-8 bg-white dark:bg-gray-800 p-8 rounded-2xl shadow-sm border border-gray-200 dark:border-gray-700"
+          class="w-full max-w-[400px] md:max-w-[480px] md:aspect-square mx-auto relative overflow-hidden bg-white dark:bg-gray-800 rounded-2xl shadow-sm border border-gray-200 dark:border-gray-700"
         >
-          <h3 class="text-xl font-bold">Навыки и экспертиза</h3>
-
-          <div
-            v-for="skill in skills"
-            :key="skill.name"
-            class="flex flex-col gap-2"
-          >
-            <div class="flex justify-between text-sm font-medium">
-              <span class="dark:text-gray-200">{{ skill.name }}</span>
-              <span class="text-[var(--color-primary)]"
-                >{{ skill.percentage }}%</span
-              >
-            </div>
-            <div class="w-full bg-gray-100 dark:bg-gray-700 rounded-full h-2.5">
-              <div
-                class="bg-[var(--color-primary)] h-2.5 rounded-full transition-all duration-500"
-                :style="{ width: `${skill.percentage}%` }"
-              />
-            </div>
-          </div>
-
-          <div class="flex flex-wrap gap-2 mt-2">
-            <span
-              v-for="tag in skillTags"
-              :key="tag"
-              class="px-3 py-1 bg-gray-100 dark:bg-gray-700 dark:text-gray-300 text-gray-600 rounded-md text-xs font-semibold"
-            >
-              {{ tag }}
-            </span>
-          </div>
+          <NuxtImg
+            src="/about.jpg"
+            alt="about"
+            class="w-full h-full object-cover"
+          />
         </div>
       </div>
     </div>

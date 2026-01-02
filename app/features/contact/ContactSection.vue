@@ -7,41 +7,7 @@
       <div class="flex flex-col md:flex-row gap-12">
         <!-- Contact Form -->
         <div class="flex-1">
-          <h2 class="text-2xl font-bold text-gray-900 dark:text-white mb-6">
-            Связаться со мной
-          </h2>
-          <form class="flex flex-col gap-4">
-            <div class="grid grid-cols-2 gap-4">
-              <UFormField label="Имя">
-                <UInput placeholder="Ислам Алишеров" size="lg" />
-              </UFormField>
-              <UFormField label="Email">
-                <UInput
-                  type="email"
-                  placeholder="alisherov@gmail.com"
-                  size="lg"
-                />
-              </UFormField>
-            </div>
-            <UFormField label="Тема">
-              <UInput placeholder="Запрос по проекту" size="lg" />
-            </UFormField>
-            <UFormField label="Сообщение">
-              <UTextarea
-                placeholder="Расскажите о вашем проекте..."
-                :rows="4"
-                size="lg"
-              />
-            </UFormField>
-            <UButton
-              type="submit"
-              color="primary"
-              size="lg"
-              class="w-full md:w-auto md:self-start"
-            >
-              Отправить сообщение
-            </UButton>
-          </form>
+          <NuxtImg src="/contact.jpg" class="w-full h-full object-cover" />
         </div>
 
         <!-- Contact Info -->
@@ -111,10 +77,10 @@
             <div class="flex gap-3">
               <a
                 target="_blank"
-                href="https://www.facebook.com/ermek.chkv/"
+                href="https://t.me/ca11_911"
                 class="size-10 rounded-full bg-gray-100 dark:bg-gray-800 flex items-center justify-center text-gray-600 dark:text-gray-300 hover:bg-[var(--color-primary)] hover:text-white transition-all"
               >
-                <UIcon name="i-simple-icons-facebook" class="size-5" />
+                <UIcon name="i-simple-icons-telegram" class="size-5" />
               </a>
               <a
                 target="_blank"
@@ -122,6 +88,13 @@
                 class="size-10 rounded-full bg-gray-100 dark:bg-gray-800 flex items-center justify-center text-gray-600 dark:text-gray-300 hover:bg-[var(--color-primary)] hover:text-white transition-all"
               >
                 <UIcon name="i-simple-icons-instagram" class="size-5" />
+              </a>
+              <a
+                target="_blank"
+                href="https://wa.me/996706105915"
+                class="size-10 rounded-full bg-gray-100 dark:bg-gray-800 flex items-center justify-center text-gray-600 dark:text-gray-300 hover:bg-[var(--color-primary)] hover:text-white transition-all"
+              >
+                <UIcon name="i-simple-icons-whatsapp" class="size-5" />
               </a>
             </div>
           </div>

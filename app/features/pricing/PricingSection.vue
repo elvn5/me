@@ -11,6 +11,10 @@ defineProps<{
     featured: boolean;
   }>;
 }>();
+
+const openTelegram = () => {
+  window.open("https://t.me/ca11_911", "_blank");
+};
 </script>
 
 <template>
@@ -76,7 +80,8 @@ defineProps<{
             :color="plan.featured ? 'primary' : 'neutral'"
             :variant="plan.featured ? 'solid' : 'outline'"
             size="lg"
-            class="w-full"
+            class="w-full cursor-pointer"
+            @click="openTelegram"
           >
             {{ plan.buttonText }}
           </UButton>
