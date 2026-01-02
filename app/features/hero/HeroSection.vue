@@ -15,7 +15,7 @@ const typeText = async (
 
 onMounted(async () => {
   // Start subtitle sequence
-  const initialSubtitle = "Кекс инструктор";
+  const initialSubtitle = "Мирбек Атабеков";
   const finalSubtitle = "Разработчик мобильных приложений и веб-сайтов";
 
   await typeText(initialSubtitle, (val) => (subtitleText.value = val));
